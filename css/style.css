@@ -28,7 +28,7 @@
 }
 
 .header-item:hover{
-    color: #2196F3;
+    color: var(--button-color);
 }
 
 .section-item{
@@ -41,7 +41,7 @@
 }
 
 .section-item:hover{
-    color: #2196F3;
+    color: var(--button-color);
 }
 
 .hero{

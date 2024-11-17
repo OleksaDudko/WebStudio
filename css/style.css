@@ -8,7 +8,7 @@
     --footertext-color: #ffffff99;
 }
 
-.header-link{
+.header-logo{
     color: #000;
     font-family: Raleway;
     font-size: 26px;
@@ -18,7 +18,7 @@
 }
 
 
-.header-item{
+.header-massege{
     color: var(--titles-color);
     font-family: Roboto;
     font-size: 14px;
@@ -27,11 +27,11 @@
     letter-spacing: 0.28px;
 }
 
-.header-item:hover{
+.header-massege:hover{
     color: var(--button-color);
 }
 
-.section-item{
+.header-link{
     color: var(--text-color);
     font-family: Roboto;
     font-size: 14px;
@@ -40,7 +40,7 @@
     letter-spacing: 0.28px;
 }
 
-.section-item:hover{
+.header-link:hover{
     color: var(--button-color);
 }
 
@@ -151,7 +151,7 @@ footer{
     letter-spacing: 0.78px;
 }
 
-.adress-link{
+.footer-adress{
     color: var(--background-color);
     font-family: Roboto;
     font-size: 14px;
@@ -160,7 +160,16 @@ footer{
     letter-spacing: 0.42px;
 }
 
-.adress-link2{
+.footer-info{
+    color: rgba(255, 255, 255, 0.60);
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.71;
+    letter-spacing: 0.42px;
+}
+
+.footer-tel{
     color: rgba(255, 255, 255, 0.60);
     font-family: Roboto;
     font-size: 14px;

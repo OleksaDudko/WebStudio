@@ -1,18 +1,29 @@
 :root {
-  --background-color: #fff;
+  --background-color: #FFF;
   --title-color: #212121;
   --button-color: #2196f3;
   --text-color: #757575;
   --footer-color: #2f303a;
   --footertext-color: #ffffff99;
+  --backgroundbuttons-color: #F5F4FA;
+  --logo-color: #000;
 }
 
 body{
   font-family: Roboto;
 }
 
-.header-link {
-  color: #000;
+.header-web{
+  color: var(--button-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+
+.header-logo{
+  color: var(--logo-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -45,19 +56,21 @@ body{
 }
 
 .websites-btn {
-  color: var(--background-color);
+  color: var(--title-color);
   text-align: center;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
   letter-spacing: 0.48px;
-}
-
-.websites-btn {
-  background: var(--button-color);
+  background: var(--backgroundbuttons-color);
   box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1),
               0px 1px 2px 0px rgba(0, 0, 0, 0.08), 
               0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+}
+
+.websites-btn:hover{
+  color: var(--background-color);
+  background: var(--button-color);
 }
 
 .works-subtitle{
@@ -80,8 +93,17 @@ footer{
   background-color: #2F303A;
 }
 
+.footer-web{
+  color: var(--button-color);
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.38;
+  letter-spacing: 0.78px;
+}
+
 .footer-link{
-  color: #FFF;
+  color: var(--background-color);
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;

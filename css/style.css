@@ -22,8 +22,7 @@ body{
 }
 
 .header{
-    margin-top: 24px;
-    margin-bottom: 25px;
+    padding-top: 24px;
 }
 
 .header-web{
@@ -71,8 +70,8 @@ body{
 
 .hero{
     background-color: var(--backgroundtt-color);
-    margin-top: 225px;
-    margin-bottom: 200px;
+    padding-top: 225px;
+    padding-bottom: 200px;
 }
 
 .hero-title{
@@ -103,8 +102,8 @@ body{
 }
 
 .pluses{
-    margin-top: 294px;
-    margin-bottom: 26px;
+    padding-top: 94px;
+    padding-bottom: 26px;
 }
 
 .pluses-subtitle{
@@ -125,8 +124,8 @@ body{
 }
 
 .work{
-    margin-top: 26px;
-    margin-bottom: 94px;
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 
 .work-subtitle{
@@ -145,8 +144,8 @@ body{
 
 .team{
     background-color: var(--backgroundbuttons-color);
-    margin-top: 188px;
-    margin-bottom: 94px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-subtitle{
@@ -183,8 +182,8 @@ body{
 
 footer{
     background-color: var(--backgroundtt-color);
-    margin-top: 154px;
-    margin-bottom: 60px;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 
 .footer-web{

@@ -9,8 +9,20 @@
   --logo-color: #000;
 }
 
+.container{
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 body{
   font-family: Roboto;
+}
+
+header{
+  padding-top: 24px;
 }
 
 .header-web{
@@ -55,6 +67,11 @@ body{
   color: var(--button-color);
 }
 
+.websites{
+  padding-top: 119px;
+  padding-bottom: 50px;
+}
+
 .websites-btn {
   color: var(--title-color);
   text-align: center;
@@ -71,6 +88,10 @@ body{
 .websites-btn:hover{
   color: var(--background-color);
   background: var(--button-color);
+}
+
+.works{
+  padding-bottom: 94px;
 }
 
 .works-subtitle{
@@ -91,6 +112,8 @@ body{
 
 footer{
   background-color: #2F303A;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-web{

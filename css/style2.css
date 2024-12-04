@@ -23,6 +23,7 @@ body{
 
 header{
   padding-top: 24px;
+  padding-bottom: 25px;
 }
 
 .header-web{
@@ -67,12 +68,12 @@ header{
   color: var(--button-color);
 }
 
-.websites{
-  padding-top: 119px;
-  padding-bottom: 50px;
+.works{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
-.websites-btn {
+.works-btn {
   color: var(--title-color);
   text-align: center;
   font-size: 16px;
@@ -85,13 +86,9 @@ header{
               0px 2px 2px 0px rgba(0, 0, 0, 0.12);
 }
 
-.websites-btn:hover{
+.works-btn:hover{
   color: var(--background-color);
   background: var(--button-color);
-}
-
-.works{
-  padding-bottom: 94px;
 }
 
 .works-subtitle{

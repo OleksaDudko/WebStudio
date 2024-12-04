@@ -23,6 +23,7 @@ body{
 
 .header{
     padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .header-web{
@@ -70,7 +71,7 @@ body{
 
 .hero{
     background-color: var(--backgroundtt-color);
-    padding-top: 225px;
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
@@ -103,7 +104,6 @@ body{
 
 .pluses{
     padding-top: 94px;
-    padding-bottom: 26px;
 }
 
 .pluses-subtitle{

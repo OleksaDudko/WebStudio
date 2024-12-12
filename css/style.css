@@ -15,6 +15,7 @@
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+    outline: 1px solid red;
 }
 
 body{
@@ -197,16 +198,12 @@ body{
 .worker-list{
     display: flex;
     gap: 30px;
-
-}
-
-.worker-box{
-    background: var(--background-color);
 }
 
 .worker-box2{
     padding-top: 30px;
     padding-bottom: 30px;
+    background: var(--background-color);
 }
 
 .worker-subtitle{

@@ -26,6 +26,11 @@ body{
     padding-bottom: 25px;
 }
 
+.header-bucket{
+    display: flex;
+    align-items: baseline;
+}
+
 .header-web{
     color: var(--button-color);
     font-family: Raleway;
@@ -42,8 +47,15 @@ body{
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+    margin-right: 93px;
 }
 
+.header-items{
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
+    margin-right: 344px;
+}
 
 .header-massege{
     color: var(--titles-color);
@@ -55,6 +67,12 @@ body{
 
 .header-massege:hover{
     color: var(--button-color);
+}
+
+.header-list{
+    display: flex;
+    align-items: baseline;
+    gap: 50px;
 }
 
 .header-link{
@@ -73,6 +91,11 @@ body{
     background-color: var(--backgroundtt-color);
     padding-top: 200px;
     padding-bottom: 200px;
+
+}
+
+.hero-bucket{
+    text-align: center;
 }
 
 .hero-title{
@@ -83,6 +106,10 @@ body{
     line-height: 1.36;
     letter-spacing: 2.64px;
     text-transform: uppercase;
+    width: 696px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-btn{
@@ -95,6 +122,8 @@ body{
     border-radius: 4px;
     background: var(--titles-color);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    padding: 10px 32px 10px 32px;
+    border: none;
 }
 
 .hero-btn:hover{
@@ -104,6 +133,11 @@ body{
 
 .pluses{
     padding-top: 94px;
+}
+
+.pluses-list{
+    display: flex;
+    gap: 30px;
 }
 
 .pluses-subtitle{
@@ -128,6 +162,11 @@ body{
     padding-bottom: 94px;
 }
 
+.work-list{
+    display: flex;
+    gap: 30px;
+}
+
 .work-subtitle{
     color: var(--titles-color);
     text-align: center;
@@ -135,6 +174,7 @@ body{
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    margin-bottom: 56px;
 }
 
 .work-img{
@@ -155,6 +195,19 @@ body{
     font-weight: 700;
     line-height: 1.16;
     letter-spacing: 1.08px;
+    margin-bottom: 50px;
+}
+
+.worker-list{
+    display: flex;
+    gap: 30px;
+
+}
+
+.worker-box{
+    background: var(--background-color);
+    width: 270px;
+    height: 368px;
 }
 
 .worker-subtitle{
@@ -164,6 +217,8 @@ body{
     font-weight: 500;
     line-height: 1.18;
     letter-spacing: 0.48px;
+    margin-top: 30px;
+    margin-bottom: 10px; 
 }
 
 .worker-text{
@@ -202,6 +257,7 @@ footer{
     font-weight: 700;
     line-height: 1.38;
     letter-spacing: 0.78px;
+    margin-bottom: 20px;
 }
 
 .footer-adress{
@@ -210,6 +266,16 @@ footer{
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+    font-style: normal;
+}
+
+.footer-item{
+    margin-top: 20px;
+}
+
+.footer-element{
+    margin-top: 9px;
+    margin-bottom: 9px;
 }
 
 .footer-info{
@@ -218,6 +284,7 @@ footer{
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.42px;
+
 }
 
 .footer-tel{

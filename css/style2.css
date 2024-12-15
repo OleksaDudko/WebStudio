@@ -8,6 +8,7 @@
   --backgroundbuttons-color: #f5f4fa;
   --logo-color: #000;
   --box-color: #eee;
+  --line-color: #ECECEC;
 }
 
 .container {
@@ -16,7 +17,7 @@
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 body {
@@ -28,6 +29,7 @@ body {
 header {
   padding-top: 24px;
   padding-bottom: 25px;
+  border-bottom: 1px solid var(--line-color);
 }
 
 .header-bucket {
@@ -43,6 +45,7 @@ header {
   line-height: 1.38;
   letter-spacing: 0.78px;
   margin-right: 93px;
+
 }
 
 .header-web {
@@ -157,6 +160,7 @@ header {
   font-weight: 400;
   line-height: 1.66;
   letter-spacing: 0.48px;
+  margin-top: 4px;
 }
 
 /* ====================== */

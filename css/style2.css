@@ -138,6 +138,10 @@ header {
   gap: 30px;
 }
 
+.works-item{
+  flex-basis: calc((100% - 60px) / 3);
+}
+
 .works-box{
   border: 1px solid var(--box-color);
   background: var(--background-color);

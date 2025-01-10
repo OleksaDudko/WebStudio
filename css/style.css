@@ -98,7 +98,9 @@ body{
     background-color: var(--backgroundtt-color);
     padding-top: 200px;
     padding-bottom: 200px;
-
+    background-image: rgba(47, 48, 58, 0.40), 
+                      rgba(47, 48, 58, 0.40);
+    background-image: url(../images/hero.webp);
 }
 
 .hero-bucket{
@@ -204,6 +206,14 @@ body{
     box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
                 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
                 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+}
+
+.worker-box2{
+    border-radius: 0px 0px 4px 4px;
+}
+
+.worker-box{
+    border-radius: 0px 0px 4px 4px;
 }
 
 .work-subtitle{

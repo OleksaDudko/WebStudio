@@ -95,12 +95,11 @@ body{
 /* ================================= */
 
 .hero{
-    background-color: var(--backgroundtt-color);
     padding-top: 200px;
     padding-bottom: 200px;
     background-image:linear-gradient(rgba(47, 48, 58, 0.40), 
-                                     rgba(47, 48, 58, 0.40));
-    background-image: url(../images/hero.webp);
+                                     rgba(47, 48, 58, 0.40)), 
+                                       url(../images/hero.webp);
 }
 
 .hero-bucket{

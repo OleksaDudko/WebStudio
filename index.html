@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -65,7 +65,7 @@
       <section class="hero">
         <div class="container hero-bucket">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- наші плюси -->
@@ -348,5 +348,19 @@
       </div>
     </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-close" data-modal-close><svg class="modal-svg">
+          <use href="./images/symbol-defs.svg#icon-close"></use>
+        </svg></button>
+        <h2 class="modal-title">Залиште свої дані, ми вам передзвонимо</h2>
+        <form class="modal-form">
+          <label class="modal-label">ім'я
+            <input type="text" class="modal-input">
+          </label>
+        </form>
+      </div>
+    </div>
+    <script src="./js/modal.js" type="module"></script>
   </body>
 </html>

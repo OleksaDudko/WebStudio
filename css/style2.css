@@ -305,3 +305,59 @@ footer {
   height: 20px;
   fill: var(--background-color);
 }
+
+.footer-modal{
+  margin-left: 93px;
+}
+
+.footer-label{
+  color: var(--background-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-fg{
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-input{
+  width: 358px;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(255, 255, 255, 0.30);
+  background: rgba(33, 150, 243, 0.00);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  padding-left: 16px;
+  margin-top: 20px;
+}
+
+.footer-button{
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  background: var(--button-color);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  color: var(--background-color);
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.8;
+  letter-spacing: 0.96px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 12px;
+}
+
+.footer-svg{
+  width: 24px;
+  height: 24px;
+  fill: var(--background-color);
+}

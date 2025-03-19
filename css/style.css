@@ -415,6 +415,7 @@ footer{
 .footer-box{
     display: flex;
     align-items: baseline;
+    flex-wrap: nowrap;
 }
 
 .footer-web{
@@ -517,12 +518,7 @@ footer{
 }
 
 .footer-modal{
-    display: flex;
-    align-items: center;
-}
-
-.footer-form{
-    
+    margin-left: 93px;
 }
 
 .footer-label{
@@ -534,6 +530,11 @@ footer{
     text-transform: uppercase;
     display: flex;
     flex-direction: column;
+}
+
+.footer-fg{
+    display: flex;
+    align-items: baseline;
 }
 
 .footer-input{
@@ -559,6 +560,11 @@ footer{
     font-weight: 700;
     line-height: 1.8;
     letter-spacing: 0.96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-left: 12px;
 }
 
 .footer-svg{
@@ -607,6 +613,14 @@ footer{
     position: absolute;
     top: 8px;
     right: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-icon{
+    width: 18px;
+    height: 18px;
 }
 
 .modal-title{

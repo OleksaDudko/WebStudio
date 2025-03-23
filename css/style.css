@@ -518,7 +518,7 @@ footer{
 }
 
 .footer-modal{
-    margin-left: 93px;
+    margin-left: 183px;
 }
 
 .footer-label{
@@ -623,6 +623,10 @@ footer{
     height: 18px;
 }
 
+.modal-icon:hover{
+    fill: var(--button-color);
+}
+
 .modal-title{
     width: 448px;
     color: var(--titles-color);
@@ -657,6 +661,13 @@ footer{
     padding-right: 5px;
 }
 
+.modal-input:hover{
+    border:1px solid var(--button-color);
+    .modal-svg{
+        fill: var(--button-color);
+    }
+}
+
 .modal-svg{
     width: 18px;
     height: 18px;
@@ -676,6 +687,10 @@ footer{
     margin-bottom: 10px;
     padding: 12px 16px 12px 16px;
     resize: none;
+}
+
+.modal-komment:hover{
+    border: 1px solid var(--button-color);
 }
 
 .modal-check{

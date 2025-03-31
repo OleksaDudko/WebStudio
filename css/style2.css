@@ -74,6 +74,9 @@ header {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.28px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-massege::after{
@@ -125,6 +128,9 @@ header {
   display: flex;
   align-items: center;
   gap: 10px;
+  transition-property: color, fill, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover {
@@ -191,11 +197,14 @@ header {
   border: none;
   padding: 6px 25px;
   border-radius: 4px;
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-btn:hover {
   color: var(--background-color);
-  background: var(--button-color);
+  background-color: var(--button-color);
   box-shadow: 0px 3px 1px 0px 
             rgba(0, 0, 0, 0.1),
               0px 1px 2px 0px 
@@ -212,6 +221,9 @@ header {
 
 .works-item{
   flex-basis: calc((100% - 60px) / 3);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-item:hover{
@@ -344,6 +356,9 @@ footer {
   justify-content: center;
   background-color: var(--background-icon);
   border-radius: 50%;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:hover{

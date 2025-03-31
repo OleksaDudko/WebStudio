@@ -74,6 +74,9 @@ body{
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.28px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-massege::after{
@@ -125,6 +128,9 @@ body{
     display: flex;
     align-items: center;
     gap: 10px;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-link:hover{
@@ -145,6 +151,9 @@ body{
     background-image:linear-gradient(rgba(47, 48, 58, 0.40), 
                                      rgba(47, 48, 58, 0.40)), 
                                        url(../images/hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-bucket{
@@ -360,7 +369,9 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    
+    transition-property: fill, background-color, border-radius;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .worker-link:hover{
@@ -423,6 +434,9 @@ body{
     height: 92px;
     padding: 16px 32px 16px 32px;
     fill: var(--icon-color);
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ================================= */
@@ -526,6 +540,9 @@ footer{
     justify-content: center;
     background-color: var(--background-icon);
     border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-links:hover{
@@ -644,6 +661,9 @@ footer{
 .modal-icon{
     width: 18px;
     height: 18px;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-icon:hover{
@@ -683,7 +703,9 @@ footer{
     margin-bottom: 10px;
     padding-left: 42px;
     padding-right: 5px;
-
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-input:hover{
@@ -717,6 +739,9 @@ footer{
     margin-bottom: 10px;
     padding: 12px 16px 12px 16px;
     resize: none;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-komment:hover{

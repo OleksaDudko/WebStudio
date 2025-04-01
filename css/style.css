@@ -90,6 +90,9 @@ body{
     left: 0;
     bottom: -30px;
     opacity: 0; 
+    transition-property: opacity;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-massege:hover::after{
@@ -111,6 +114,9 @@ body{
     width: 16px;
     height: 12px;
     fill: var(--text-color); 
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-icon2{
@@ -369,7 +375,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    transition-property: fill, background-color, border-radius;
+    transition-property: fill, background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -184,6 +184,9 @@ header {
   right: 0;
   padding: 63px 24px 63px 24px;
   opacity: 0;
+  transition-property: opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .works-btn {

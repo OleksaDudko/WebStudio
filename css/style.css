@@ -641,6 +641,10 @@ footer{
     pointer-events: none;
 }
 
+.is-hidden .modal{
+    transform: scale(0);
+}
+
 .modal{
     width: 528px;
     height: 581px;
@@ -651,6 +655,9 @@ footer{
                 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
     position: relative;
     padding: 40px;
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close{

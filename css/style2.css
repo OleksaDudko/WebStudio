@@ -160,12 +160,13 @@ header {
 .works-item:hover{
   .works-overlay{
     opacity: 1;
+    transform: translateY(0);
   }
 }
 
 .works-relative{
   position: relative;
-
+  overflow: hidden;
 }
 
 .works-overlay{
@@ -184,9 +185,10 @@ header {
   right: 0;
   padding: 63px 24px 63px 24px;
   opacity: 0;
-  transition-property: opacity;
+  transition-property: transform;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%);
 }
 
 .works-btn {

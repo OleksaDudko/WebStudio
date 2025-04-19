@@ -17,8 +17,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/main.min.css">
   </head>
   <body>
     <header class="header">
@@ -65,11 +69,11 @@
       <section class="hero">
         <div class="container hero-bucket">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+          <button type="button" class="hero-btn animate__animated animate__headShake animate__infinite" data-modal-open>Замовити послугу</button>
         </div>
       </section>
       <!-- наші плюси -->
-      <section class="pluses">
+      <section class="pluses" data-aos="fade-up">
         <div class="container">
           <ul class="pluses-list">
             <li class="pluses-item">
@@ -102,7 +106,7 @@
           </ul>
         </div>
       </section>
-      <section class="work">
+      <section class="work" data-aos="fade-up">
         <!-- чим ми займаємся -->
         <div class="container">
           <h2 class="work-subtitle">Чим ми займаємося</h2>
@@ -122,7 +126,7 @@
           </ul>
         </div>
       </section>
-      <section class="team">
+      <section class="team" data-aos="fade-up">
         <!-- наша команда -->
         <div class="container">
           <h2 class="team-subtitle">Наша команда</h2>
@@ -272,7 +276,7 @@
           </nav>
         </div>
       </section>
-      <section class="clients">
+      <section class="clients" data-aos="fade-up">
       <!-- постійні клієнти -->
        <div class="container clients-div">
       <h2 class="clients-subtitle">Постійні клієнти</h2>
@@ -402,5 +406,9 @@
       </div>
     </div>
     <script src="./js/modal.js" type="module"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

@@ -1,43 +1,52 @@
 .clients{
     margin-top: 94px;
     margin-bottom: 94px;
-}
 
-.clients-div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    &__div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.clients-subtitle{
-    color: var(--titles-color);
-    font-size: 36px;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
+    &__subtitle{
+        color: $titles-color;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.16;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
+    }
 
-.clients-list{
-    display: flex;
-    gap: 30px;
-}
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
 
-.clients-link:hover{
-    .clients-icon{
-        fill: var(--button-color);
-        border: 1px solid var(--button-color);
+    &__link:hover{
+        .clients__icon{
+            fill: $button-color;
+            border: 1px solid $button-color;
+        }
+    }
+
+    &__icon{
+        border-radius: 4px;
+        border: 1px solid $icon-color;
+        width: 170px;
+        height: 92px;
+        padding: 16px 32px 16px 32px;
+        fill: $icon-color;
+        transition-property: fill, border;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
 }
 
-.clients-icon{
-    border-radius: 4px;
-    border: 1px solid var(--icon-color);
-    width: 170px;
-    height: 92px;
-    padding: 16px 32px 16px 32px;
-    fill: var(--icon-color);
-    transition-property: fill, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+
+
+
+
+
+
+
+

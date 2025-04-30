@@ -1,100 +1,94 @@
-.team{
-    background-color: var(--backgroundbuttons-color);
+.worker{
+    background-color: $backgroundbuttons-color;
     padding-top: 94px;
     padding-bottom: 94px;
-}
 
-.team-subtitle{
-    color: var(--titles-color);
-    text-align: center;
-    font-size: 36px;;
-    font-weight: 700;
-    line-height: 1.16;
-    letter-spacing: 1.08px;
-    margin-bottom: 50px;
-}
-
-.worker-box{
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
-                0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
-                0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-}
-
-.worker-box2{
-    border-radius: 0px 0px 4px 4px;
-}
-
-.worker-box{
-    border-radius: 0px 0px 4px 4px;
-}
-
-.worker-list{
-    display: flex;
-    gap: 30px;
-}
-
-.worker-box2{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    background: var(--background-color);
-}
-
-.worker-subtitle{
-    color: var(--titles-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-    margin-bottom: 10px; 
-}
-
-.worker-text{
-    color: var(--text-color);
-    text-align: center;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.18;
-    letter-spacing: 0.48px;
-}
-
-.worker-items{
-    display: flex;
-    gap: 10px;
-    margin-top: 16px;
-    align-items: center;
-    justify-content: center;
-}
-
-.worker-link{
-    width: 44px;
-    height: 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    transition-property: fill, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.worker-link:hover{
-    .worker-icon{
-       fill: var(--background-color); 
+    &__title{
+        color: $titles-color;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.16;
+        letter-spacing: 1.08px;
+        margin-bottom: 50px;
     }
-    background-color: var(--button-color);
-}
 
-.worker-icon{
-    width: 20px;
-    height: 20px;
-    fill: var(--icon-color);
-    transition-property: fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+    &__box{
+        box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+                    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 
+                    0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+        border-radius: 0px 0px 4px 4px;
+    }
 
-.worker-img{
-    width: 270px;
-    height: 260px;
+    &__box2{
+        border-radius: 0px 0px 4px 4px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: $background-color;
+    }
+    
+    &__list{
+        display: flex;
+        gap: 30px;
+    }
+
+    &__subtitle{
+        color: $titles-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.18;
+        letter-spacing: 0.48px;
+        margin-bottom: 10px; 
+    }
+
+    &__text{
+        color: $text-color;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.18;
+        letter-spacing: 0.48px;
+    }
+
+    &__items{
+        display: flex;
+        gap: 10px;
+        margin-top: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__link{
+        width: 44px;
+        height: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition-property: fill, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+        &:hover{
+            .worker__icon{
+               fill: $background-color; 
+            }
+            background-color: $button-color;
+        }
+    }
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+        fill: $icon-color;
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    &__img{
+        width: 270px;
+        height: 260px;
+    }
 }

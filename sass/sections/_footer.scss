@@ -4,9 +4,10 @@
     padding-bottom: 60px;
 
     &__box{
-        display: flex;
-        align-items: baseline;
-        flex-wrap: nowrap;
+        // display: flex;
+        // align-items: baseline;
+        // flex-wrap: nowrap;
+        @include flexbox($wrap:nowrap, $align:baseline);
     }
 
     &__web{
@@ -91,14 +92,16 @@
     &__links{
         width: 44px;
         height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flexbox($wrap:nowrap);
         background-color: $background-icon;
         border-radius: 50%;
         transition-property: background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transitions;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover{
             background-color: $button-color;
@@ -157,9 +160,10 @@
         font-weight: 700;
         line-height: 1.8;
         letter-spacing: 0.96px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flexbox($wrap:nowrap);
         gap: 10px;
         margin-left: 12px;
         border: none;

@@ -38,8 +38,9 @@
       padding: 63px 24px 63px 24px;
       opacity: 0;
       transition-property: transform;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transitions;
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transform: translateY(100%);
     }
     
@@ -55,8 +56,9 @@
       padding: 6px 25px;
       border-radius: 4px;
       transition-property: color, background-color, box-shadow;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transitions;
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover{
         color: $background-color;
@@ -81,8 +83,9 @@
     &__item{
       flex-basis: calc((100% - 60px) / 3);
       transition-property: box-shadow;
-      transition-duration: 250ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      @extend %transitions;
+      // transition-duration: 250ms;
+      // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
       &:hover{
         box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.10), 

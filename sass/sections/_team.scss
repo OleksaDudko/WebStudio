@@ -52,23 +52,26 @@
     }
 
     &__items{
-        display: flex;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flexbox($wrap:nowrap);
         gap: 10px;
         margin-top: 16px;
-        align-items: center;
-        justify-content: center;
     }
 
     &__link{
         width: 44px;
         height: 44px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        @include flexbox($wrap:nowrap);
         border-radius: 50%;
         transition-property: fill, background-color;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transitions;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
         &:hover{
             .worker__icon{
@@ -83,8 +86,9 @@
         height: 20px;
         fill: $icon-color;
         transition-property: fill;
-        transition-duration: 250ms;
-        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        @extend %transitions;
+        // transition-duration: 250ms;
+        // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     
     &__img{

@@ -1,16 +1,27 @@
 .worker{
     background-color: $backgroundbuttons-color;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__title{
         color: $titles-color;
         text-align: center;
-        font-size: 36px;
+        font-size: 28px;
         font-weight: 700;
         line-height: 1.16;
+        letter-spacing: 0.84px;
+        margin-bottom: 30px;
+
+        @media screen and (min-width: 1200px){
+        font-size: 36px;
         letter-spacing: 1.08px;
         margin-bottom: 50px;
+    }
     }
 
     &__box{
@@ -30,6 +41,7 @@
     &__list{
         display: flex;
         gap: 30px;
+        flex-wrap: wrap;
     }
 
     &__subtitle{
@@ -92,7 +104,21 @@
     }
     
     &__img{
+        width: auto;
+        height: auto;
+
+        @media screen and (min-width: 480px){
+        width: 450px;
+        height: 460px;
+    }
+
+        @media screen and (min-width: 768px){
+        width: 354px;
+        height: 376px;
+    }
+        @media screen and (min-width: 1200px){
         width: 270px;
         height: 260px;
+    }
     }
 }

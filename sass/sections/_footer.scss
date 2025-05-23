@@ -4,19 +4,44 @@
     padding-bottom: 60px;
 
     &__box{
-        // display: flex;
-        // align-items: baseline;
-        // flex-wrap: nowrap;
-        @include flexbox($wrap:nowrap, $align:baseline);
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+        // @include flexbox($wrap:nowrap, $align:baseline);
+
+        @media screen and (min-width: 768px){
+            align-items: baseline;
+            flex-direction: row;
+        }
+        @media screen and (min-width: 768px){
+            
+        }
+    }
+
+    &__wrapper{
+        text-align: center;
+
+        @media screen and (min-width: 768px){
+            
+        }
+        @media screen and (min-width: 1200px){
+            text-align: start;
+        }
     }
 
     &__web{
         color: $button-color;
         font-family: Raleway;
-        font-size: 26px;
+        font-size: 24px;
         font-weight: 700;
         line-height: 1.38;
+        letter-spacing: 0.72px;
+
+        @media screen and (min-width: 1200px){
+        font-size: 26px;
         letter-spacing: 0.78px;
+    }
     }
 
     &__link{
@@ -69,7 +94,16 @@
     }
 
     &__div{
-        margin-left: 70px;
+        text-align: center;
+        margin-top: 60px;
+        @media screen and (min-width: 768px){
+            margin-left: 165px;
+            margin-top: 0;
+        }
+        @media screen and (min-width: 1200px){
+            margin-left: 70px;
+            text-align: start;
+        }
     }
     
     &__subtitle{
@@ -79,6 +113,7 @@
         line-height: 1.14;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        margin-bottom: 20px;
     }
 
     &__lists{
@@ -117,7 +152,17 @@
     }
     
     &__modal{
-        margin-left: 116px;
+        margin-top: 60px;
+        text-align: center;
+        
+        @media screen and (min-width: 768px){
+            
+        }
+        @media screen and (min-width: 1200px){
+            text-align: start;
+            margin-left: auto;
+            margin-top: 0;
+        }
     }
 
     &__title{
@@ -130,14 +175,19 @@
         display: flex;
         flex-direction: column;
     }
-    
+
     &__fg{
         display: flex;
-        align-items: baseline;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        @media screen and (min-width: 1200px){
+            align-items: baseline;
+        }
     }
     
     &__input{
-        width: 358px;
+        width: 100%;
         height: 50px;
         border-radius: 4px;
         border: 1px solid rgba(255, 255, 255, 0.30);
@@ -146,6 +196,14 @@
         padding-left: 16px;
         margin-top: 20px;
         color: white;
+
+        @media screen and (min-width: 480px){
+            width: 450px;
+        }
+
+        @media screen and (min-width: 1200px){
+            width: 358px;
+        }
     }
 
     &__button{

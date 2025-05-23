@@ -1,16 +1,21 @@
 .pluses{
-    padding-top: 94px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+    }
 
     &__list{
         display: flex;
         gap: 30px;
+        flex-wrap: wrap;
     }
-
-    &__item::before{
+    &__item{
+    &::before{
         content: "";
         display: block;
         margin-bottom: 30px;
-        width: 270px;
+        width: auto;
         height: 120px;
         background: $backgroundbuttons-color;
         background-image: url(../images/antenna.png);
@@ -18,8 +23,20 @@
         background-repeat: no-repeat;
         background-position: center;
         border-radius: 4px;
+
+        @media screen and (min-width: 480px){
+        width: 450px;
     }
 
+        @media screen and (min-width: 768px){
+        width: 354px;
+    }
+
+        @media screen and (min-width: 1200px){
+        width: 270px;
+    }
+    }
+    }
     &__item:nth-child(2)::before{
         background-image:  url(../images/clock.png);
     }
@@ -39,7 +56,12 @@
         line-height: 1.14;
         letter-spacing: 0.42px;
         text-transform: uppercase;
+        text-align: center;
         margin-bottom: 10px;
+
+        @media screen and (min-width: 768px){
+        text-align: start;
+    }
     }
 
     &__text{
@@ -48,6 +70,19 @@
         font-weight: 400;
         line-height: 1.71;
         letter-spacing: 0.42px;
+        width: auto;
+
+        @media screen and (min-width: 480px){
+        width: 450px;
+    }
+
+        @media screen and (min-width: 768px){
+        width: 354px;
+    }
+
+        @media screen and (min-width: 1200px){
+        width: 270px;
+    }
     }
 }
 

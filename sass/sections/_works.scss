@@ -1,6 +1,11 @@
 .works {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px){
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
 
     &__lists {
       display: flex;
@@ -28,18 +33,31 @@
       }
     }
 
+    &__img{
+      width: 100%;
+      @media screen and (min-width: 480px){
+        width: 450px;
+    }
+
+      @media screen and (min-width: 768px){
+        width: 354px;
+    }
+
+      @media screen and (min-width: 1200px){
+        width: 370px;
+    }
+    }
+
     &__relative{
       position: relative;
       overflow: hidden;
     }
 
     &__overlay{
-      width: 370px;
-      height: 294px;
+      width: 100%;
+      height: 100%;
       color: #FFF;
-      font-family: Roboto;
       font-size: 18px;
-      font-style: normal;
       font-weight: 400;
       line-height: 1.55;
       background: rgba(33, 150, 243, 0.90);
@@ -47,13 +65,28 @@
       position: absolute;
       top: 0;
       right: 0;
-      padding: 63px 24px 63px 24px;
+      padding: 5px 20px 5px 20px;
       opacity: 0;
       transition-property: transform;
       @extend %transitions;
       // transition-duration: 250ms;
       // transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
       transform: translateY(100%);
+
+      @media screen and (min-width: 480px){
+        width: 450px;
+        padding: 100px 24px 100px 24px;
+    }
+
+      @media screen and (min-width: 768px){
+        width: 354px;
+        padding: 49px 24px 49px 24px;
+    }
+
+      @media screen and (min-width: 1200px){
+        width: 370px;
+        padding: 63px 24px 63px 24px;
+    }
     }
     
     &__btn {
@@ -94,6 +127,7 @@
     
     &__item{
       flex-basis: 100%;
+      outline: 1px solid $box-color;
       transition-property: box-shadow;
       @extend %transitions;
       // transition-duration: 250ms;
@@ -121,23 +155,9 @@
     
     
     &__box{
-      border: 1px solid $box-color;
+      
       background: $background-color;
-      width: 100%;
-      height: 110px;
       padding: 20px 24px;
-
-      @media screen and (min-width: 480px){
-        width: 450px;
-    }
-
-      @media screen and (min-width: 768px){
-        width: 354px;
-    }
-
-      @media screen and (min-width: 1200px){
-        width: 370px;
-    }
     }
     
     &__subtitle {

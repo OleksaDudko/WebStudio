@@ -19,7 +19,7 @@ img {
   height: auto;
 }
 
-.modal__komment, .modal__svg, .modal__input, .modal__icon, .modal, .works__item, .works__btn, .works__overlay, .footer__links, .clients__icon, .worker__icon, .worker__link, .header__link, .header__icon, .header__massege::after, .header__massege {
+.modal__komment, .modal__svg, .modal__input, .modal__icon, .modal, .works__item, .works__btn, .works__overlay, .footer__links, .clients__icon, .worker__icon, .worker__link, .mobile__close:hover .mobile__icon, .mobile__close:focus .mobile__icon, .header__link, .header__icon, .header__massege::after, .header__massege {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -100,6 +100,28 @@ body {
   font-weight: 700;
   line-height: 1.38;
   letter-spacing: 0.78px;
+}
+.header__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+}
+.header__menu {
+  width: 40px;
+  height: 40px;
+  fill: #000;
+}
+@media screen and (min-width: 768px) {
+  .header__menu {
+    display: none;
+  }
 }
 .header__nav {
   display: none;
@@ -203,6 +225,101 @@ body {
 }
 .header__link:hover .header__icons {
   fill: #2196F3;
+}
+
+.mobile {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFF;
+  opacity: 1;
+  z-index: 1;
+  padding-top: 48px;
+  padding-left: 40px;
+  padding-bottom: 48px;
+}
+.mobile__close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mobile__close:hover .mobile__icon, .mobile__close:focus .mobile__icon {
+  fill: #2196F3;
+  transition-property: fill;
+}
+.mobile__icon {
+  width: 30px;
+  height: 30px;
+}
+.mobile__list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 302px;
+}
+.mobile__link {
+  color: #212121;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+.mobile__link:hover {
+  color: #2196F3;
+}
+.mobile__items {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  margin-bottom: 64px;
+}
+.mobile__contact {
+  color: #2196F3;
+  font-size: 34px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.68px;
+}
+.mobile__itm:last-child .mobile__contact {
+  color: #757575;
+  font-size: 24px;
+  letter-spacing: 0.48px;
+}
+.mobile__elements {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.mobile__social {
+  color: #2196F3;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: center;
+}
+.mobile__element:not(:last-child) .mobile__social::after {
+  content: "";
+  width: 1px;
+  height: 22px;
+  background: rgba(33, 33, 33, 0.2);
+  display: block;
+  margin-left: 10px;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
 }
 
 .hero {
@@ -981,14 +1098,20 @@ body {
 }
 
 .modal {
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   border-radius: 4px;
   background: #FFF;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
   position: relative;
   padding: 40px;
   transition-property: transform;
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
 }
 .modal__close {
   width: 30px;
@@ -1013,7 +1136,7 @@ body {
   fill: #2196F3;
 }
 .modal__title {
-  width: 448px;
+  width: 370px;
   color: #212121;
   font-family: Roboto;
   font-size: 20px;
@@ -1022,6 +1145,11 @@ body {
   letter-spacing: 0.6px;
   text-align: center;
   margin-bottom: 12px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__title {
+    width: 448px;
+  }
 }
 .modal__label {
   color: #757575;
@@ -1093,15 +1221,27 @@ body {
   margin-bottom: 30px;
 }
 .modal__text {
+  width: 346px;
+  height: 14px;
   color: #757575;
   font-family: Roboto;
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.7;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.36px;
+}
+@media screen and (min-width: 1200px) {
+  .modal__text {
+    width: 400px;
+    height: 24px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+  }
 }
 .modal__link {
+  width: 346px;
+  height: 14px;
   color: #2196F3;
   font-family: Roboto;
   font-size: 14px;
@@ -1115,6 +1255,12 @@ body {
   text-decoration-thickness: auto;
   text-underline-offset: auto;
   text-underline-position: from-font;
+}
+@media screen and (min-width: 1200px) {
+  .modal__link {
+    width: 400px;
+    height: 24px;
+  }
 }
 .modal__box {
   display: flex;

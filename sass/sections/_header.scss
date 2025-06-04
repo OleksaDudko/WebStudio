@@ -256,6 +256,10 @@
             flex-direction: column;
             gap: 32px;
             margin-bottom: 64px;
+
+            @media screen and (max-width: 420px){
+               margin-bottom: 45px; 
+            }
         }
 
         &__contact{

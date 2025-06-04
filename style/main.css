@@ -282,6 +282,11 @@ body {
   gap: 32px;
   margin-bottom: 64px;
 }
+@media screen and (max-width: 420px) {
+  .mobile__items {
+    margin-bottom: 45px;
+  }
+}
 .mobile__contact {
   color: #2196F3;
   font-size: 34px;
